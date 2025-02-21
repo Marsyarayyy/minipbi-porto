@@ -8,9 +8,9 @@ export default function Navbar() {
          <Image src="/logo.png" alt="logo" width={800} height={800}  /> 
     
       <div className='flex flex-row gap-10 items-center justify-center text-[18px] font-medium'>
-          <a href="/  ">About</a>
-          <a href="">Projects</a>
-          <a href="">Contact</a>
+          <a href="#about">About</a>
+          <a href="#project">Projects</a>
+          <a href="#contact">Contact</a>
       </div>
     </div>
     </div>

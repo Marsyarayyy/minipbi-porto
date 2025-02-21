@@ -47,31 +47,36 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="finisher-header h-[80vh] flex items-center justify-center text-white px-10 md:px-20">
-      <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-6xl gap-10">
-        {/* Bagian Teks */}
-        <div className="flex flex-col gap-5 text-center md:text-left ">
-          
-          <h1 className={`text-4xl md:text-6xl font-bold leading-tight ${shrikhand.className}`}>
-            Marsya Rayani <br />
-            <span className="text-[#040812] font-bold"></span>
-          </h1>
-          <p className="w-full md:w-3/4 text-lg md:text-xl">
-            Student with web design athusiast dvnsdjvbsdjvdv jvnsdnvsdkvdnss vjskd vvv sbj
-          </p>
-          <Button link='/about'>Get To Know Me</Button>
-          <Icons></Icons>
-        </div>
+    <div className="relative min-h-screen w-full overflow-hidden">
+      {/* Finisher Header Canvas */}
+      <div className="absolute inset-0 finisher-header z-0"></div>
 
-        {/* Bagian Gambar */}
-        <div className="flex justify-center">
-          <Image
-            src="/profile.png"
-            alt="hero"
-            width={400}
-            height={400}
-            className="w-[250px] md:w-[400px] object-contain"
-          />
+      {/* Konten Header */}
+      <div className="relative flex items-center justify-center text-white px-10 md:px-20 min-h-screen z-10">
+        <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-6xl gap-10">
+          {/* Bagian Teks */}
+          <div className="flex flex-col gap-5 text-center md:text-left">
+            <h1 className={`text-4xl md:text-6xl font-bold leading-tight ${shrikhand.className}`}>
+              Marsya Rayani <br />
+              <span className="text-[#040812] font-bold"></span>
+            </h1>
+            <p className="w-full md:w-3/4 text-lg md:text-xl">
+              I am a passionate designer and developer with a love for nature
+            </p>
+            <Button link="#about">Get To Know Me</Button>
+            <Icons />
+          </div>
+
+          {/* Bagian Gambar */}
+          <div className="flex justify-center">
+            <Image
+              src="/profile.png"
+              alt="hero"
+              width={400}
+              height={400}
+              
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -79,3 +84,4 @@ const Header = () => {
 };
 
 export default Header;
+  
